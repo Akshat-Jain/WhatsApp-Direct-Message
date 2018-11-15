@@ -10,7 +10,7 @@
         android:id="@+id/labelText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enter the phone number you want \nto message on WhatsApp"
+        android:text="Enter the phone number you want to message on WhatsApp (along with country code)"
         tools:layout_editor_absoluteX="76dp"
         tools:layout_editor_absoluteY="77dp" />
 
