@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/labelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the phone number you want \nto message on WhatsApp"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="77dp" />
+
+    <EditText
+        android:id="@+id/inputField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        tools:layout_editor_absoluteX="74dp"
+        tools:layout_editor_absoluteY="122dp"
+        android:layout_below="@+id/labelText"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message on WhatsApp"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="231dp"
+        android:onClick="contactOnWhatsApp"
+        android:layout_below="@+id/inputField"/>
+</RelativeLayout>
