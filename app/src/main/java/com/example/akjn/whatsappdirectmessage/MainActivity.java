@@ -2,6 +2,8 @@ package com.example.akjn.whatsappdirectmessage;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.widget.EditText;
 import android.view.View;
 import android.content.Intent;
@@ -17,8 +19,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void contactOnWhatsApp(View v)
-    {
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.action_menu, menu);
+        return true;
+    }
+
+    public void contactOnWhatsApp(View v) {
+
         EditText phoneNumberField = (EditText)findViewById(R.id.inputField);
 
 //  CODE FOR COUNTRY CODE SPINNER
