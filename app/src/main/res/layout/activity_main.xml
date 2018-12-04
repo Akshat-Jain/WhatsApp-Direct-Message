@@ -10,27 +10,44 @@
         android:id="@+id/labelText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enter the phone number you want to message on WhatsApp (along with country code)"
+        android:text="@string/phone_number_input"
         tools:layout_editor_absoluteX="76dp"
         tools:layout_editor_absoluteY="77dp" />
 
-    <EditText
-        android:id="@+id/inputField"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="phone"
-        tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="122dp"
-        android:layout_below="@+id/labelText"/>
+        android:layout_below="@+id/labelText"
+        >
 
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/cpp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:ccp_defaultNameCode="US"
+            android:layout_marginRight="30px"
+            ></com.hbb20.CountryCodePicker>
+
+
+        <EditText
+            android:id="@+id/inputField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone"
+            tools:layout_editor_absoluteX="74dp"
+            tools:layout_editor_absoluteY="122dp"
+            android:layout_below="@+id/labelText"/>
+
+    </LinearLayout>
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Message on WhatsApp"
+        android:text="@string/button_text"
         tools:layout_editor_absoluteX="87dp"
         tools:layout_editor_absoluteY="231dp"
         android:onClick="contactOnWhatsApp"
-        android:layout_below="@+id/inputField"/>
+        android:layout_below="@+id/ll"/>
 </RelativeLayout>

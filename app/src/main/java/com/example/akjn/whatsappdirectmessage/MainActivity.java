@@ -1,11 +1,13 @@
 package com.example.akjn.whatsappdirectmessage;
 
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.widget.EditText;
+import android.view.View;
 import android.content.Intent;
 import android.net.Uri;
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-import android.widget.EditText;
+
+import com.hbb20.CountryCodePicker;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,10 +17,21 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void contactOnWhatsApp(View v) {
-        EditText phoneNumberField = (EditText) findViewById(R.id.inputField);
-        String phoneNumber = phoneNumberField.getText().toString();
-        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://api.whatsapp.com/send?phone=" + phoneNumber));
+    public void contactOnWhatsApp(View v)
+    {
+        EditText phoneNumberField = (EditText)findViewById(R.id.inputField);
+
+//  CODE FOR COUNTRY CODE SPINNER
+
+        CountryCodePicker cpp=(CountryCodePicker)findViewById(R.id.cpp);
+        cpp.registerCarrierNumberEditText(phoneNumberField);
+        String phoneNumber = cpp.getFullNumber();
+
+
+        //Toast.makeText(MainActivity.this,phoneNumber,Toast.LENGTH_LONG).show();
+
+
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://api.whatsapp.com/send?phone="+phoneNumber));
         startActivity(browserIntent);
     }
 }
