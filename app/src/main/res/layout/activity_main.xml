@@ -1,68 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/labelText"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:text="Enter the phone number you want to message on WhatsApp (along with country code)"
-        android:textAlignment="center"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/inputField"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        android:text="@string/phone_number_input"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="77dp" />
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="0dp"
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/horizontal_guideline"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="@+id/vertical_guideline" />
+        android:layout_below="@+id/labelText"
+        >
 
-    <EditText
-        android:id="@+id/inputField"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:hint="Phone Number"
-        android:inputType="phone"
-        app:layout_constraintBottom_toTopOf="@+id/horizontal_guideline"
-        app:layout_constraintLeft_toLeftOf="@+id/vertical_guideline"
-        app:layout_constraintRight_toRightOf="parent" />
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/cpp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:ccp_defaultNameCode="US"
+            android:layout_marginRight="30px"
+            ></com.hbb20.CountryCodePicker>
 
+
+        <EditText
+            android:id="@+id/inputField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone"
+            tools:layout_editor_absoluteX="74dp"
+            tools:layout_editor_absoluteY="122dp"
+            android:layout_below="@+id/labelText"/>
+
+    </LinearLayout>
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="@string/button_text"
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="231dp"
         android:onClick="contactOnWhatsApp"
-        android:text="Message on WhatsApp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/horizontal_guideline" />
-
-    <android.support.constraint.Guideline
-        android:id="@+id/vertical_guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.25" />
-
-    <android.support.constraint.Guideline
-        android:id="@+id/horizontal_guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.5" />
-
-</android.support.constraint.ConstraintLayout>
+        android:layout_below="@+id/ll"/>
+</RelativeLayout>
