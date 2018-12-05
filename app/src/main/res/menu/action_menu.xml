@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/dark_mode"
+        android:title="Dark Mode"/>
+
+    <item android:id="@+id/help"
+        android:title="Help" />
+
+</menu>
