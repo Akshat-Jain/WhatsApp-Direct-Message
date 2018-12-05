@@ -6,10 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
+
     <TextView
         android:id="@+id/labelText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="39dp"
         android:text="@string/phone_number_input"
         tools:layout_editor_absoluteX="76dp"
         tools:layout_editor_absoluteY="77dp" />
@@ -19,35 +24,44 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/labelText"
-        >
+
+        android:layout_marginTop="12dp">
 
         <com.hbb20.CountryCodePicker
             android:id="@+id/cpp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:ccp_defaultNameCode="US"
             android:layout_marginRight="30px"
-            ></com.hbb20.CountryCodePicker>
+            app:ccp_defaultNameCode="US"></com.hbb20.CountryCodePicker>
 
 
         <EditText
             android:id="@+id/inputField"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/labelText"
             android:ems="10"
             android:inputType="phone"
             tools:layout_editor_absoluteX="74dp"
-            tools:layout_editor_absoluteY="122dp"
-            android:layout_below="@+id/labelText"/>
+            tools:layout_editor_absoluteY="122dp" />
 
     </LinearLayout>
+
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/ll"
+        android:layout_marginTop="14dp"
+        android:onClick="contactOnWhatsApp"
         android:text="@string/button_text"
         tools:layout_editor_absoluteX="87dp"
-        tools:layout_editor_absoluteY="231dp"
-        android:onClick="contactOnWhatsApp"
-        android:layout_below="@+id/ll"/>
+        tools:layout_editor_absoluteY="231dp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true" />
 </RelativeLayout>
