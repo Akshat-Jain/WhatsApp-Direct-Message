@@ -1,67 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
     tools:context=".MainActivity">
-
-
 
     <TextView
         android:id="@+id/labelText"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="39dp"
+        android:layout_marginBottom="8dp"
         android:text="@string/phone_number_input"
-        tools:layout_editor_absoluteX="76dp"
-        tools:layout_editor_absoluteY="77dp" />
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/inputField"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
-    <LinearLayout
-        android:id="@+id/ll"
-        android:layout_width="match_parent"
+    <com.hbb20.CountryCodePicker
+        android:id="@+id/cpp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/labelText"
+        android:layout_marginBottom="8dp"
+        app:ccp_defaultNameCode="US"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal_guideline"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/vertical_guideline"></com.hbb20.CountryCodePicker>
 
-        android:layout_marginTop="12dp">
-
-        <com.hbb20.CountryCodePicker
-            android:id="@+id/cpp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="30px"
-            app:ccp_defaultNameCode="US"></com.hbb20.CountryCodePicker>
-
-
-        <EditText
-            android:id="@+id/inputField"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/labelText"
-            android:ems="10"
-            android:inputType="phone"
-            tools:layout_editor_absoluteX="74dp"
-            tools:layout_editor_absoluteY="122dp" />
-
-    </LinearLayout>
+    <EditText
+        android:id="@+id/inputField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:hint="@string/phone_number_hint"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/horizontal_guideline"
+        app:layout_constraintLeft_toLeftOf="@+id/vertical_guideline"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/ll"
-        android:layout_marginTop="14dp"
         android:onClick="contactOnWhatsApp"
         android:text="@string/button_text"
-        tools:layout_editor_absoluteX="87dp"
-        tools:layout_editor_absoluteY="231dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/horizontal_guideline" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vertical_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/horizontal_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
 
     <Spinner
         android:id="@+id/spinner"
-        android:layout_width="match_parent"
+        android:layout_width="368dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="16dp" />
 
-        android:layout_alignParentTop="true" />
-</RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

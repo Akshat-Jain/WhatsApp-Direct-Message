@@ -7,7 +7,13 @@ import android.util.DisplayMetrics;
 import android.content.res.Configuration;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
 import android.widget.ArrayAdapter;
+import android.view.Menu;
+import android.view.MenuInflater;
+
+
+
 import android.widget.EditText;
 import android.view.View;
 import android.content.Intent;
@@ -76,6 +82,7 @@ public class MainActivity extends AppCompatActivity  {
     }
 
 
+
     public void setLocale(String localeName) {
 
             myLocale = new Locale(localeName);
@@ -93,6 +100,19 @@ public class MainActivity extends AppCompatActivity  {
 
     public void contactOnWhatsApp(View view) {
         EditText phoneNumberField = (EditText) findViewById(R.id.inputField);
+          @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.action_menu, menu);
+        return true;
+    }
+
+    public void contactOnWhatsApp(View v) {
+
+        EditText phoneNumberField = (EditText)findViewById(R.id.inputField);
+
+  
+
 
 //  CODE FOR COUNTRY CODE SPINNER
 
@@ -107,26 +127,5 @@ public class MainActivity extends AppCompatActivity  {
         Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://api.whatsapp.com/send?phone=" + phoneNumber));
         startActivity(browserIntent);
     }
-/*
-    @Override
-    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        switch (position) {
-            case 0:
-                setLocale("en");
-                break;
-            case 1:
-                setLocale("hi");
-                break;
-            case 2:
-                setLocale("bng");
-                break;
-            case 3:
-                setLocale("fr");
-                break;
 
-        }
-                        }
-    @Override
-    public void onNothingSelected (AdapterView <?> parent){
-    } */
 }
