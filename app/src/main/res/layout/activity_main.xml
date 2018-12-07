@@ -31,7 +31,8 @@
         app:ccp_defaultNameCode="US"
         app:layout_constraintBottom_toTopOf="@+id/horizontal_guideline"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="@+id/vertical_guideline"></com.hbb20.CountryCodePicker>
+        app:layout_constraintRight_toRightOf="@+id/vertical_guideline"
+        android:background="@null"></com.hbb20.CountryCodePicker>
 
     <EditText
         android:id="@+id/inputField"

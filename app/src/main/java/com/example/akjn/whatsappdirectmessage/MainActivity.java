@@ -30,10 +30,10 @@ import android.widget.AdapterView.OnItemSelectedListener;
 
 import com.hbb20.CountryCodePicker;
 
-public class MainActivity extends AppCompatActivity  {
+public class MainActivity extends AppCompatActivity {
     Spinner spinner;
     Locale myLocale;
-    String currentLanguage="en", currentLang;
+    String currentLanguage = "en", currentLang;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,50 +82,47 @@ public class MainActivity extends AppCompatActivity  {
     }
 
 
-
     public void setLocale(String localeName) {
 
-            myLocale = new Locale(localeName);
-            Resources res = getResources();
-            DisplayMetrics dm = res.getDisplayMetrics();
-            Configuration conf = res.getConfiguration();
-            conf.locale = myLocale;
-            res.updateConfiguration(conf, dm);
-            Intent refresh = new Intent(this, MainActivity.class);
-            refresh.putExtra(currentLang, localeName);
-            startActivity(refresh);
+        myLocale = new Locale(localeName);
+        Resources res = getResources();
+        DisplayMetrics dm = res.getDisplayMetrics();
+        Configuration conf = res.getConfiguration();
+        conf.locale = myLocale;
+        res.updateConfiguration(conf, dm);
+        Intent refresh = new Intent(this, MainActivity.class);
+        refresh.putExtra(currentLang, localeName);
+        startActivity(refresh);
 
     }
 
 
-    public void contactOnWhatsApp(View view) {
-        EditText phoneNumberField = (EditText) findViewById(R.id.inputField);
-          @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.action_menu, menu);
-        return true;
+
+        @Override
+        public boolean onCreateOptionsMenu(Menu menu)
+        {
+            MenuInflater inflater = getMenuInflater();
+            inflater.inflate(R.menu.action_menu, menu);
+            return true;
+        }
+
+        public void contactOnWhatsApp (View v){
+
+            EditText phoneNumberField = (EditText) findViewById(R.id.inputField);
+
+
+            //  CODE FOR COUNTRY CODE SPINNER
+
+            CountryCodePicker cpp = (CountryCodePicker) findViewById(R.id.cpp);
+            cpp.registerCarrierNumberEditText(phoneNumberField);
+            String phoneNumber = cpp.getFullNumber();
+
+
+            //Toast.makeText(MainActivity.this,phoneNumber,Toast.LENGTH_LONG).show();
+
+
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://api.whatsapp.com/send?phone=" + phoneNumber));
+            startActivity(browserIntent);
+        }
+
     }
-
-    public void contactOnWhatsApp(View v) {
-
-        EditText phoneNumberField = (EditText)findViewById(R.id.inputField);
-
-  
-
-
-//  CODE FOR COUNTRY CODE SPINNER
-
-        CountryCodePicker cpp = (CountryCodePicker) findViewById(R.id.cpp);
-        cpp.registerCarrierNumberEditText(phoneNumberField);
-        String phoneNumber = cpp.getFullNumber();
-
-
-        //Toast.makeText(MainActivity.this,phoneNumber,Toast.LENGTH_LONG).show();
-
-
-        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://api.whatsapp.com/send?phone=" + phoneNumber));
-        startActivity(browserIntent);
-    }
-
-}
