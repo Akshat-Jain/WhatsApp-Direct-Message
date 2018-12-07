@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WhatsApp Direct Message</string>
+    <string name="phone_number_input"> व्हाट्सएप पर जिस फोन नंबर पर आप संदेश भेजना चाहते हैं उसे दर्ज करें (देश कोड के साथ) </string>
+    <string name="button_text"> व्हाट्सएप पर संदेश भेजें </string>
+</resources>

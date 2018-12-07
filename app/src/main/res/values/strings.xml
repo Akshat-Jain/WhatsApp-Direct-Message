@@ -3,4 +3,5 @@
     <string name="phone_number_input">Enter the phone number you want to message on WhatsApp (along with country code)</string>
     <string name="phone_number_hint">Phone Number</string>
     <string name="button_text">Message on WhatsApp</string>
+
 </resources>
