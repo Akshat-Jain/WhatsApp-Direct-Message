@@ -50,7 +50,11 @@
         android:text="@string/button_text"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/horizontal_guideline" />
+        app:layout_constraintTop_toTopOf="@+id/horizontal_guideline"
+        android:elevation="4dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:padding="4dp"/>
 
     <android.support.constraint.Guideline
         android:id="@+id/vertical_guideline"
