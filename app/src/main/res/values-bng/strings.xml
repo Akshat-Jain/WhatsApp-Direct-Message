@@ -2,4 +2,6 @@
     <string name="app_name">WhatsApp Direct Message</string>
     <string name="phone_number_input">আপনি যে মোবাইল নাম্বারটি বার্তা দিতে চান তা লিখুন (দেশের কোড সহ)</string>
     <string name="button_text">হোয়াটসঅ্যাপ বার্তা</string>
+    <string name="phone_number_hint">ফোন নম্বর</string>
+
 </resources>
