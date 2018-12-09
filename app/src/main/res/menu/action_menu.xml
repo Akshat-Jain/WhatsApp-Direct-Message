@@ -2,9 +2,12 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item android:id="@+id/dark_mode"
+
         android:title="@string/dark_menu"/>
 
     <item android:id="@+id/help"
         android:title="@string/help_menu" />
+    
+
 
 </menu>

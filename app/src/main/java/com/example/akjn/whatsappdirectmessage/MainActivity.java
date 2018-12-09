@@ -9,12 +9,18 @@ import android.content.res.Configuration;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
+import android.view.MotionEvent;
+
 import android.widget.ArrayAdapter;
 import android.view.Menu;
 import android.view.MenuInflater;
 
-
+import android.widget.LinearLayout;
+import android.widget.PopupWindow;
 
 import android.widget.EditText;
 import android.view.View;
@@ -152,8 +158,28 @@ public class MainActivity extends AppCompatActivity {
             startActivity(browserIntent);
         }
 
+    //Creating the Actions for the menu items
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.help:
+                Intent intent = new Intent(MainActivity.this, help.class);
+                startActivity(intent);
+                break;
+            case R.id.dark_mode:
+                return true;
+
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+        return true;
+    }
+
+
+
     public void clearNumber(View view) {
         EditText hello = (EditText)findViewById(R.id.inputField);
         hello.setText("");
     }
 }
+
