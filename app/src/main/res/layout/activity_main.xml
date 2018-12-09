@@ -97,6 +97,8 @@
         android:layout_marginTop="8dp"
         android:onClick="clearNumber"
         android:text="clear"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimaryDark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
