@@ -122,22 +122,18 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
+   // @Override
+ /*   public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         switch (id)
         {
             case R.id.dark_mode:
-                //add code here
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-                Intent i=new Intent(MainActivity.this,MainActivity.class);
-                startActivity(i);
-                finish();
+
             default:
                 return super.onOptionsItemSelected(item);
         }
 
-    }
+    }*/
 
     public void contactOnWhatsApp (View v){
 
@@ -167,6 +163,11 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 break;
             case R.id.dark_mode:
+                //add code here
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+                Intent i=new Intent(MainActivity.this,MainActivity.class);
+                startActivity(i);
+                finish();
                 return true;
 
             default:
