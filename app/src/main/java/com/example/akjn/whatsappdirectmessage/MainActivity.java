@@ -125,4 +125,8 @@ public class MainActivity extends AppCompatActivity {
             startActivity(browserIntent);
         }
 
+    public void clearNumber(View view) {
+        EditText hello = (EditText)findViewById(R.id.inputField);
+        hello.setText("");
     }
+}
