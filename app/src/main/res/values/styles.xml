@@ -6,6 +6,22 @@
         <item name="colorPrimary">#008577</item>
         <item name="colorPrimaryDark">#00574B</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="backgroundcolor">#FFF</item>
+        <item name="textcolor">#000</item>
+        <item name="buttoncolor">#00574B</item>
+        <item name="background">@drawable/whatsapp_background</item>
+        <item name="spinnerbackground">@null</item>
+    </style>
+
+    <style name="DarkTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#212121</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="backgroundcolor">#303030</item>
+        <item name="textcolor">#FFF</item>
+        <item name="buttoncolor">#00574B</item>
+        <item name="background">@drawable/whatsapp_background_dark</item>
+        <item name="spinnerbackground">#FFF</item>
     </style>
 
 </resources>
