@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="ds">
+    <declare-styleable name="attr">
         <attr name="textcolor" format="color"/>
         <attr name="backgroundcolor" format="color"/>
         <attr name="buttoncolor" format="color"/>
