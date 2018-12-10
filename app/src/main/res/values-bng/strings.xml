@@ -5,5 +5,6 @@
     <string name="phone_number_hint">ফোন নম্বর</string>
     <string name="help_menu">সাহায্য করুন</string>
     <string name="dark_menu">গাঢ় মোড</string>
+    <string name="clear">পরিষ্কার</string>
 
 </resources>

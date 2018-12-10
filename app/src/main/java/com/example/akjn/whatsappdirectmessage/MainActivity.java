@@ -121,20 +121,6 @@ public class MainActivity extends AppCompatActivity {
             inflater.inflate(R.menu.action_menu, menu);
             return true;
         }
-
-   // @Override
- /*   public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-        switch (id)
-        {
-            case R.id.dark_mode:
-
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-
-    }*/
-
     public void contactOnWhatsApp (View v){
 
             EditText phoneNumberField = (EditText) findViewById(R.id.inputField);

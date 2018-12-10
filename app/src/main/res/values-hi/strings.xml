@@ -5,4 +5,5 @@
     <string name="phone_number_hint">   फ़ोन नंबर</string>
     <string name="help_menu">मदद</string>
     <string name="dark_menu">अंधेरा मोड</string>
+    <string name="clear">मिटाना</string>
 </resources>
