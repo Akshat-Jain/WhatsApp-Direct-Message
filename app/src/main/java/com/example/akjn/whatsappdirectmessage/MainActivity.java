@@ -157,7 +157,10 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
                 finish();
                 return true;
-
+            case R.id.aboutus:
+                Intent intents = new Intent(MainActivity.this, AboutUs.class);
+                startActivity(intents);
+                break;
             default:
                 return super.onOptionsItemSelected(item);
         }

@@ -11,8 +11,13 @@
         <item name="buttoncolor">#00574B</item>
         <item name="background">@drawable/whatsapp_background</item>
         <item name="spinnerbackground">@null</item>
+
+        <item name="aboutusheading">#FF1115DC</item>
+        <item name="aboutussubheading">#c10aca</item>
+
         <item name="texthelpcolor">#142FEC</item>
         <item name="headhelpcolor">#000</item>
+
     </style>
 
     <style name="DarkTheme" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -21,13 +26,17 @@
         <item name="colorAccent">@color/colorAccent</item>
         <item name="backgroundcolor">#303030</item>
         <item name="textcolor">#FFF</item>
+
+        <item name="aboutusheading">#FF1115DC</item>
+        <item name="aboutussubheading">#b69c4f</item>
+
         <item name="texthelpcolor">#FFF</item>
         <item name="headhelpcolor">#142FEC</item>
+
         <item name="buttoncolor">#00574B</item>
         <item name="background">@drawable/whatsapp_background_dark</item>
         <item name="spinnerbackground">#FFF</item>
     </style>
-
 
 
 </resources>

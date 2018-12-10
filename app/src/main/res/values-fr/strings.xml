@@ -21,5 +21,18 @@
     <string name="mssg_wap_exp">En appuyant sur ce bouton, vous êtes redirigé vers l\'application WHATSAPP, où vous pouvez envoyer un message sans enregistrer le numéro. </string>
 
 
+    <string name="aboutustext">
+L\'application est créée par M. Akshat Jain. C\'est un projet sous NWoC. Mlle Roshni Ram et M. Akshat Jain sont les mentors du projet.</string>
+    <string name="contri">OAutres contributeurs</string>
+    <string name="creator">Créateur</string>
+    <string name="Mentor">Mentor</string>
+    <string name="creator_name">Akshat Jain</string>
+    <string name="Mentor_name">Roshni Ram</string>
+    <string name="amartya">Amartya Mondal</string>
+    <string name="aomenath">Somenath</string>
+
+
+    <string name="clear">clair</string>
+
 
 </resources>
