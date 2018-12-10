@@ -6,6 +6,9 @@
     <string name="help_menu">Help</string>
     <string name="dark_menu">Dark Mode</string>
 
+
+    <string name="aboutus">About Us</string>
+
     <string name="select_lang">Select Language</string>
     <string name="s_exp">Here you are given a chance to select the language in which you want to view the app contents.</string>
     <string name="cc">Country Code</string>

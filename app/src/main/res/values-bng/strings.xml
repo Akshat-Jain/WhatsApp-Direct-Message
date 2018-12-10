@@ -6,6 +6,9 @@
     <string name="help_menu">সাহায্য করুন</string>
     <string name="dark_menu">গাঢ় মোড</string>
 
+
+    <string name="aboutus">আমাদের সম্পর্কে</string>
+
     <string name="select_lang">ভাষা নির্বাচন কর</string>
     <string name="s_exp">এখানে আপনি এমন ভাষা নির্বাচন করার সুযোগ পাবেন যেখানে আপনি অ্যাপ্লিকেশন সামগ্রী দেখতে চান।</string>
     <string name="cc">কান্ট্রি কোড</string>

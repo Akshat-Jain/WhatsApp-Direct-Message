@@ -4,7 +4,8 @@
     <string name="button_text"> व्हाट्सएप पर संदेश भेजें </string>
     <string name="phone_number_hint">   फ़ोन नंबर</string>
     <string name="help_menu">मदद</string>
-    <string name="dark_menu">अंधेरा मोड</string>
+
+    <string name="aboutus">हमारे बारे में</string>
 
     <string name="select_lang">भाषा चुनिए</string>
     <string name="s_exp">यहां आपको उस भाषा का चयन करने का मौका दिया गया है जिसमें आप ऐप सामग्री देखना चाहते हैं।</string>
