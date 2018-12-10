@@ -18,6 +18,9 @@
     <string name="mssg_wap_exp">Pressing this button, redirects to WHATSAPP app, where you can send message without saving the number. </string>
 
 
+
+    <string name="lightmode">LIght Mode</string>
+
     <string name="aboutustext">The app is created by Mr. Akshat Jain. It\'s a project under NWoC. The project is being mentored by Miss Roshni Ram and Mr. Akshat Jain.</string>
     <string name="contri">Contributors in NWoC</string>
     <string name="creator">Creator</string>
@@ -26,8 +29,6 @@
     <string name="Mentor_name">Roshni Ram</string>
     <string name="amartya">Amartya Mondal</string>
     <string name="aomenath">Somenath</string>
-
-
 
     <string name="buttonsave_text">Save Contact</string>
 

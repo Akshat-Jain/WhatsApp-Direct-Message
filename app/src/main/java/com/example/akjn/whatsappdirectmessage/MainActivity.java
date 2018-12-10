@@ -157,10 +157,21 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
                 finish();
                 return true;
+
+            case R.id.lightmode:
+                //add code here
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+                Intent ins=new Intent(MainActivity.this,MainActivity.class);
+                startActivity(ins);
+                finish();
+                return true;
+
+
             case R.id.aboutus:
                 Intent intents = new Intent(MainActivity.this, AboutUs.class);
                 startActivity(intents);
                 break;
+
             default:
                 return super.onOptionsItemSelected(item);
         }

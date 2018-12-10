@@ -19,6 +19,10 @@
     <string name="mssg_wap_exp">इस बटन को दबाकर, WHATSAPP ऐप पर रीडायरेक्ट करता है, जहां आप नंबर को सहेजे बिना संदेश भेज सकते हैं। </string>
 
 
+    <string name="lightmode">लाइट मोड</string>
+
+
+
     <string name="aboutustext">ऐप श्री अक्षत जैन द्वारा बनाया गया है। यह एनडब्ल्यूओसी के तहत एक परियोजना है। इस परियोजना को मिस रोशनी राम और श्री अक्षत जैन द्वारा सलाह दी जा रही है।</string>
     <string name="contri">अन्य योगदानकर्ता</string>
     <string name="creator">बनाने वाला</string>
@@ -27,6 +31,7 @@
     <string name="Mentor_name">रोशनी राम</string>
     <string name="amartya">अमर्त्य मंडल</string>
     <string name="aomenath">सोमनाथ</string>
+
     <string name="buttonsave_text">संपर्क सहेजें</string>
     <string name="clear">मिटाना</string>
 
