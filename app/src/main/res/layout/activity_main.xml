@@ -29,7 +29,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        app:ccp_defaultNameCode="US"
+        app:ccp_defaultNameCode="IN"
         app:ccp_contentColor="?attr/textcolor"
         app:layout_constraintBottom_toTopOf="@+id/horizontal_guideline"
         app:layout_constraintLeft_toLeftOf="parent"
