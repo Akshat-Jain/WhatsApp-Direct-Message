@@ -2,6 +2,7 @@ package com.example.akjn.whatsappdirectmessage;
 
 import android.content.Intent;
 import android.content.res.Resources;
+import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatDelegate;
 import android.util.DisplayMetrics;
 
@@ -42,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
     Spinner spinner;
     Locale myLocale;
     String currentLanguage = "en", currentLang;
+    private EditText mPhoneNumber = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -162,8 +164,21 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
+    //Function to save contact
+    public void SaveContact (View v) {
+
+        Intent intent = new Intent(ContactsContract.Intents.Insert.ACTION);
+        intent.setType(ContactsContract.RawContacts.CONTENT_TYPE);
+        mPhoneNumber= (EditText) findViewById(R.id.inputField);
+        CountryCodePicker cpp = (CountryCodePicker) findViewById(R.id.cpp);
+        String mNo= cpp.getFullNumberWithPlus() + mPhoneNumber.getText();
+        intent.putExtra(ContactsContract.Intents.Insert.PHONE, mNo);
+        startActivity(intent);
+
+    }
 
 
+    //Function to clear numbers
     public void clearNumber(View view) {
         EditText hello = (EditText)findViewById(R.id.inputField);
         hello.setText("");

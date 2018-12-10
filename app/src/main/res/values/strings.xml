@@ -14,8 +14,7 @@
     <string name="mssg_wap">Message on WhatsApp</string>
     <string name="mssg_wap_exp">Pressing this button, redirects to WHATSAPP app, where you can send message without saving the number. </string>
 
-
+    <string name="buttonsave_text">Save Contact</string>
     <string name="clear">Clear</string>
-
 
 </resources>

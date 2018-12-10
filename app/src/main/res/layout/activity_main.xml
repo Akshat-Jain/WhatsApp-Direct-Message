@@ -54,15 +54,34 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="?attr/buttoncolor"
+        android:elevation="4dp"
         android:onClick="contactOnWhatsApp"
+        android:padding="4dp"
         android:text="@string/button_text"
+        android:textColor="@color/white"
+        app:layout_constraintHorizontal_bias="0.076"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/horizontal_guideline"
-        android:elevation="4dp"
+        app:layout_constraintTop_toTopOf="@+id/horizontal_guideline" />
+
+    <Button
+        android:id="@+id/buttonsave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:background="?attr/buttoncolor"
+        android:elevation="4dp"
+        android:onClick="SaveContact"
+        android:padding="4dp"
+        android:text="@string/buttonsave_text"
         android:textColor="@color/white"
-        android:padding="4dp"/>
+        app:layout_constraintHorizontal_bias="0.974"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/horizontal_guideline" />
+
 
     <android.support.constraint.Guideline
         android:id="@+id/vertical_guideline"

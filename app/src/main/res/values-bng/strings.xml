@@ -14,8 +14,9 @@
     <string name="mssg_wap">হোয়াটসঅ্যাপ বার্তা</string>
     <string name="mssg_wap_exp">এই বাটনটি টিপুন, WHATSAPP অ্যাপ্লিকেশানে পুনঃনির্দেশিত হয়, যেখানে আপনি নম্বরটি সংরক্ষণ না করে বার্তা পাঠাতে পারেন। </string>
 
-  <string name="clear">পরিষ্কার</string>
+    <string name="buttonsave_text">যোগাযোগ সংরক্ষণ করুন</string>
 
+    <string name="clear">পরিষ্কার</string>
 
 
 </resources>

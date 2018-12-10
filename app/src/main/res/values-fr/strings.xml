@@ -12,8 +12,11 @@
     <string name="cc_exp">Ici, vous devez sélectionner le code de pays du pays auquel appartient le numéro de téléphone.</string>
     <string name="p_no_exp">Ici, vous devez entrer le numéro de téléphone que vous souhaitez envoyer un message.</string>
     <string name="mssg_wap">Message sur WhatsApp</string>
+
+    <string name="buttonsave_text">Enregistrer le contact</string>
+   <string name="clear">clair</string>
     <string name="mssg_wap_exp">En appuyant sur ce bouton, vous êtes redirigé vers l\'application WHATSAPP, où vous pouvez envoyer un message sans enregistrer le numéro. </string>
 
-    <string name="clear">clair</string>
+
 
 </resources>
