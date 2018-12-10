@@ -7,8 +7,9 @@
     tools:context="com.example.akjn.whatsappdirectmessage.help"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
+    style="@style/AppTheme"
     android:orientation="vertical"
-    android:background="@drawable/whatsapp_background">
+    android:background="?attr/background">
 
     <ImageView
         android:id="@+id/imageView"
@@ -25,7 +26,7 @@
         android:textSize="18dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:textColor="#000"
+        android:textColor="?attr/headhelpcolor"
  />
     <TextView
         android:layout_width="wrap_content"
@@ -34,7 +35,7 @@
         android:text="@string/s_exp"
         android:layout_marginLeft="20dp"
         android:textSize="15dp"
-        android:textColor="#142FEC"/>
+        android:textColor="?attr/texthelpcolor"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -44,7 +45,7 @@
         android:textSize="18dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:textColor="#000"
+        android:textColor="?attr/headhelpcolor"
         android:layout_marginTop="10dp"
         />
     <TextView
@@ -54,7 +55,7 @@
         android:text="@string/cc_exp"
         android:layout_marginLeft="20dp"
         android:textSize="15dp"
-        android:textColor="#142FEC"/>
+        android:textColor="?attr/texthelpcolor"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -64,7 +65,7 @@
         android:textSize="18dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:textColor="#000"
+        android:textColor="?attr/headhelpcolor"
         android:layout_marginTop="10dp"
         />
     <TextView
@@ -74,7 +75,7 @@
         android:text="@string/p_no_exp"
         android:layout_marginLeft="20dp"
         android:textSize="15dp"
-        android:textColor="#142FEC"/>
+        android:textColor="?attr/texthelpcolor"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -85,7 +86,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:textColor="#000"
+        android:textColor="?attr/headhelpcolor"
         />
     <TextView
         android:layout_width="wrap_content"
@@ -94,7 +95,7 @@
         android:text="@string/mssg_wap_exp"
         android:layout_marginLeft="20dp"
         android:textSize="15dp"
-        android:textColor="#142FEC"/>
+        android:textColor="?attr/texthelpcolor"/>
 
 
 </LinearLayout>

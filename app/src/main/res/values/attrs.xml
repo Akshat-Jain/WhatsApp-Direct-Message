@@ -6,6 +6,8 @@
         <attr name="buttoncolor" format="color"/>
         <attr name="background" format="reference"/>
         <attr name="spinnerbackground" format="color"/>
+        <attr name="texthelpcolor" format="color"/>
+        <attr name="headhelpcolor" format="color"/>
 
     </declare-styleable>
 
