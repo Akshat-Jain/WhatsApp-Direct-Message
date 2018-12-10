@@ -5,5 +5,15 @@
     <string name="phone_number_hint">   फ़ोन नंबर</string>
     <string name="help_menu">मदद</string>
     <string name="dark_menu">अंधेरा मोड</string>
+
+    <string name="select_lang">भाषा चुनिए</string>
+    <string name="s_exp">यहां आपको उस भाषा का चयन करने का मौका दिया गया है जिसमें आप ऐप सामग्री देखना चाहते हैं।</string>
+    <string name="cc">देश कोड</string>
+    <string name="cc_exp">यहां आपको उस देश का देश कोड चुनने की आवश्यकता है जिस पर फोन नंबर संबंधित है।</string>
+    <string name="p_no_exp">यहां, आपको उस फोन नंबर को दर्ज करना होगा जिसे आप संदेश भेजना चाहते हैं।</string>
+    <string name="mssg_wap">व्हाट्सएप पर संदेश</string>
+    <string name="mssg_wap_exp">इस बटन को दबाकर, WHATSAPP ऐप पर रीडायरेक्ट करता है, जहां आप नंबर को सहेजे बिना संदेश भेज सकते हैं। </string>
+
     <string name="clear">मिटाना</string>
+
 </resources>

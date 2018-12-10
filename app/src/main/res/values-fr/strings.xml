@@ -5,5 +5,15 @@
     <string name="phone_number_hint">Numéro de téléphone</string>
     <string name="help_menu">Aidez-moi</string>
     <string name="dark_menu">Mode sombre</string>
+
+    <string name="select_lang">Choisir la langue</string>
+    <string name="s_exp">Vous avez ici la possibilité de sélectionner la langue dans laquelle vous souhaitez afficher le contenu de l\'application.</string>
+    <string name="cc">Code postal</string>
+    <string name="cc_exp">Ici, vous devez sélectionner le code de pays du pays auquel appartient le numéro de téléphone.</string>
+    <string name="p_no_exp">Ici, vous devez entrer le numéro de téléphone que vous souhaitez envoyer un message.</string>
+    <string name="mssg_wap">Message sur WhatsApp</string>
+    <string name="mssg_wap_exp">En appuyant sur ce bouton, vous êtes redirigé vers l\'application WHATSAPP, où vous pouvez envoyer un message sans enregistrer le numéro. </string>
+
     <string name="clear">clair</string>
+
 </resources>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".help"
+    tools:context="com.example.akjn.whatsappdirectmessage.help"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:orientation="vertical"
@@ -20,7 +20,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Select Language"
+        android:text="@string/select_lang"
         android:textStyle="bold"
         android:textSize="18dp"
         android:layout_marginLeft="10dp"
@@ -31,7 +31,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:text="Here you are given a chance to select the language in which you want to view the app contents."
+        android:text="@string/s_exp"
         android:layout_marginLeft="20dp"
         android:textSize="15dp"
         android:textColor="#142FEC"/>
@@ -39,7 +39,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Country Code"
+        android:text="@string/cc"
         android:textStyle="bold"
         android:textSize="18dp"
         android:layout_marginLeft="10dp"
@@ -51,7 +51,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:text="Here you need to select the country code of the country to which the Phone Number belongs to."
+        android:text="@string/cc_exp"
         android:layout_marginLeft="20dp"
         android:textSize="15dp"
         android:textColor="#142FEC"/>
@@ -59,7 +59,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Phone Number"
+        android:text="@string/phone_number_hint"
         android:textStyle="bold"
         android:textSize="18dp"
         android:layout_marginLeft="10dp"
@@ -71,7 +71,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:text="Here,you need to enter the Phone Number whom you want to message."
+        android:text="@string/p_no_exp"
         android:layout_marginLeft="20dp"
         android:textSize="15dp"
         android:textColor="#142FEC"/>
@@ -79,7 +79,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="MESSAGE ON WHATSAPP"
+        android:text="@string/mssg_wap"
         android:textStyle="bold"
         android:textSize="18dp"
         android:layout_marginTop="10dp"
@@ -91,7 +91,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:text="Pressing this button, redirects to WHATSAPP app, where you can send message without saving the number. "
+        android:text="@string/mssg_wap_exp"
         android:layout_marginLeft="20dp"
         android:textSize="15dp"
         android:textColor="#142FEC"/>
