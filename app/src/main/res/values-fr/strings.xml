@@ -24,9 +24,6 @@
 
     <string name="lightmode">Mode lumière</string>
 
-
-    <string name="clear">clair</string>
-
     <string name="aboutustext">
 L\'application est créée par M. Akshat Jain. C\'est un projet sous NWoC. Mlle Roshni Ram et M. Akshat Jain sont les mentors du projet.</string>
     <string name="contri">OAutres contributeurs</string>
@@ -36,9 +33,5 @@ L\'application est créée par M. Akshat Jain. C\'est un projet sous NWoC. Mlle 
     <string name="Mentor_name">Roshni Ram</string>
     <string name="amartya">Amartya Mondal</string>
     <string name="aomenath">Somenath</string>
-
-
-    <string name="clear">clair</string>
-
 
 </resources>
