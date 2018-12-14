@@ -19,7 +19,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".help" />
-        <activity android:name=".AboutUs"></activity>
     </application>
 
 </manifest>

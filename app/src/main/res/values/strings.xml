@@ -5,10 +5,6 @@
     <string name="button_text">Message on WhatsApp</string>
     <string name="help_menu">Help</string>
     <string name="dark_menu">Dark Mode</string>
-
-
-    <string name="aboutus">About Us</string>
-
     <string name="select_lang">Select Language</string>
     <string name="s_exp">Here you are given a chance to select the language in which you want to view the app contents.</string>
     <string name="cc">Country Code</string>
@@ -16,22 +12,7 @@
     <string name="p_no_exp">Here,you need to enter the Phone Number whom you want to message.</string>
     <string name="mssg_wap">Message on WhatsApp</string>
     <string name="mssg_wap_exp">Pressing this button, redirects to WHATSAPP app, where you can send message without saving the number. </string>
-
-
-
     <string name="lightmode">LIght Mode</string>
-
-    <string name="aboutustext">The app is created by Mr. Akshat Jain. It\'s a project under NWoC. The project is being mentored by Miss Roshni Ram and Mr. Akshat Jain.</string>
-    <string name="contri">Contributors in NWoC</string>
-    <string name="creator">Creator</string>
-    <string name="Mentor">Mentor</string>
-    <string name="creator_name">Akshat Jain</string>
-    <string name="Mentor_name">Roshni Ram</string>
-    <string name="amartya">Amartya Mondal</string>
-    <string name="aomenath">Somenath</string>
-
     <string name="buttonsave_text">Save Contact</string>
-
     <string name="clear">Clear</string>
-
 </resources>

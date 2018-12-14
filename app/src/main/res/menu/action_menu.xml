@@ -11,11 +11,4 @@
 
     <item android:id="@+id/help"
         android:title="@string/help_menu" />
-
-    <item android:id="@+id/aboutus"
-        android:title="@string/aboutus" />
-
-    
-
-
 </menu>
