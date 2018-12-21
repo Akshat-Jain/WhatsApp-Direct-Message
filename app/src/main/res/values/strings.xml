@@ -3,16 +3,10 @@
     <string name="phone_number_input">Enter the phone number you want to message on WhatsApp (along with country code)</string>
     <string name="phone_number_hint">Phone Number</string>
     <string name="button_text">Message on WhatsApp</string>
-    <string name="help_menu">Help</string>
+
     <string name="dark_menu">Dark Mode</string>
-    <string name="select_lang">Select Language</string>
-    <string name="s_exp">Here you are given a chance to select the language in which you want to view the app contents.</string>
-    <string name="cc">Country Code</string>
-    <string name="cc_exp">Here you need to select the country code of the country to which the Phone Number belongs to.</string>
-    <string name="p_no_exp">Here,you need to enter the Phone Number whom you want to message.</string>
-    <string name="mssg_wap">Message on WhatsApp</string>
-    <string name="mssg_wap_exp">Pressing this button, redirects to WHATSAPP app, where you can send message without saving the number. </string>
-    <string name="lightmode">LIght Mode</string>
+
+    <string name="lightmode">Light Mode</string>
     <string name="buttonsave_text">Save Contact</string>
     <string name="clear">Clear</string>
 </resources>

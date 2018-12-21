@@ -21,6 +21,7 @@ import android.widget.ArrayAdapter;
 import android.view.Menu;
 import android.view.MenuInflater;
 
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 
@@ -55,8 +56,6 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
     }
 
     @Override
@@ -88,37 +87,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    //Creating the Actions for the menu items
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.help:
-                Intent intent = new Intent(MainActivity.this, help.class);
-                startActivity(intent);
-                break;
-            case R.id.dark_mode:
-                //add code here
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-                Intent i = new Intent(MainActivity.this, MainActivity.class);
-                startActivity(i);
-                finish();
-                return true;
-
-            case R.id.lightmode:
-                //add code here
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-                Intent ins = new Intent(MainActivity.this, MainActivity.class);
-                startActivity(ins);
-                finish();
-                return true;
-
-
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-        return true;
-    }
-
     //Function to save contact
     public void SaveContact(View v) {
 
@@ -139,6 +107,34 @@ public class MainActivity extends AppCompatActivity {
     public void clearNumber(View view) {
         EditText hello = (EditText) findViewById(R.id.inputField);
         hello.setText("");
+    }
+
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+
+            case R.id.dark_mode:
+                //add code here
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+                Intent i = new Intent(MainActivity.this, MainActivity.class);
+                startActivity(i);
+                finish();
+                break;
+
+            case R.id.lightmode:
+                //add code here
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+                Intent ins = new Intent(MainActivity.this, MainActivity.class);
+                startActivity(ins);
+                finish();
+                break;
+
+
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+        return true;
     }
 }
 
