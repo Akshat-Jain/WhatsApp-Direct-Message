@@ -3,10 +3,8 @@
 
     <item
         android:id="@+id/dark_mode"
+        android:checkable="true"
+        android:checked="?attr/ischecked"
         android:title="@string/dark_menu" />
-
-    <item
-        android:id="@+id/lightmode"
-        android:title="@string/lightmode" />
 
 </menu>

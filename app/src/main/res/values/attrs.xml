@@ -6,6 +6,7 @@
         <attr name="buttoncolor" format="color"/>
         <attr name="background" format="reference"/>
         <attr name="back" format="color"/>
+        <attr name="ischecked" format="boolean"/>
 
     </declare-styleable>
 

@@ -11,6 +11,7 @@
         <item name="buttoncolor">#00574B</item>
         <item name="background">@drawable/whatsapp_background</item>
         <item name="back">#BDBDBD</item>
+        <item name="ischecked">false</item>
 
 
     </style>
@@ -24,6 +25,7 @@
         <item name="buttoncolor">#00574B</item>
         <item name="background">@drawable/whatsapp_background_dark</item>
         <item name="back">#212121</item>
+        <item name="ischecked">true</item>
     </style>
 
 

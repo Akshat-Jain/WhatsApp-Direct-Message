@@ -1,6 +1,8 @@
 package com.example.akjn.whatsappdirectmessage;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.provider.ContactsContract;
 import android.support.v7.app.AlertDialog;
@@ -49,10 +51,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES) {
-            setTheme(R.style.DarkTheme);
-        } else
+        SharedPreferences sp = getSharedPreferences("Mydata", Context.MODE_PRIVATE);
+        if (sp.getString("theme", "light").equals("light"))
             setTheme(R.style.AppTheme);
+        else
+            setTheme(R.style.DarkTheme);
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -111,24 +114,27 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        SharedPreferences sp = getSharedPreferences("Mydata", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sp.edit();
         switch (item.getItemId()) {
 
             case R.id.dark_mode:
                 //add code here
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-                Intent i = new Intent(MainActivity.this, MainActivity.class);
-                startActivity(i);
-                finish();
-                break;
-
-            case R.id.lightmode:
-                //add code here
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-                Intent ins = new Intent(MainActivity.this, MainActivity.class);
-                startActivity(ins);
-                finish();
-                break;
-
+                if (!item.isChecked()) {
+                    editor.putString("theme", "dark");
+                    editor.commit();
+                    Intent i = new Intent(MainActivity.this, MainActivity.class);
+                    startActivity(i);
+                    finish();
+                    break;
+                } else {
+                    editor.putString("theme", "light");
+                    editor.commit();
+                    Intent ins = new Intent(MainActivity.this, MainActivity.class);
+                    startActivity(ins);
+                    finish();
+                    break;
+                }
 
             default:
                 return super.onOptionsItemSelected(item);
