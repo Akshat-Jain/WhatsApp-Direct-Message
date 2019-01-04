@@ -3,44 +3,20 @@ package com.example.akjn.whatsappdirectmessage;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.res.Resources;
+import android.content.pm.PackageManager;
 import android.provider.ContactsContract;
 import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatDelegate;
-import android.util.DisplayMetrics;
-
-import android.content.res.Configuration;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-
-
 import android.view.Gravity;
-import android.view.LayoutInflater;
 import android.view.MenuItem;
-import android.view.MotionEvent;
-
-import android.widget.ArrayAdapter;
 import android.view.Menu;
 import android.view.MenuInflater;
-
-import android.widget.Button;
-import android.widget.LinearLayout;
-import android.widget.PopupWindow;
-
 import android.widget.EditText;
 import android.view.View;
-import android.content.Intent;
 import android.net.Uri;
-import android.widget.AdapterView;
 import android.widget.Spinner;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Locale;
-
-
 import android.widget.Toast;
-import android.widget.AdapterView.OnItemSelectedListener;
 
 import com.hbb20.CountryCodePicker;
 
@@ -79,9 +55,28 @@ public class MainActivity extends AppCompatActivity {
             cpp.registerCarrierNumberEditText(phoneNumberField);
             String phoneNumber = cpp.getFullNumber();
 
-            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://api.whatsapp.com/send?phone=" + phoneNumber));
-            startActivity(browserIntent);
+            boolean installed = appInstalledOrNot("com.whatsapp");
+            if(installed) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://api.whatsapp.com/send?phone=" + phoneNumber));
+                startActivity(browserIntent);
+            } else {
+                Toast.makeText(this,"Whatsapp is not installed on your device",Toast.LENGTH_SHORT).show();
+            }
+
         }
+    }
+
+    private boolean appInstalledOrNot(String uri) {
+        PackageManager pm = getPackageManager();
+        boolean app_installed;
+        try {
+            pm.getPackageInfo(uri, PackageManager.GET_ACTIVITIES);
+            app_installed = true;
+        }
+        catch (PackageManager.NameNotFoundException e) {
+            app_installed = false;
+        }
+        return app_installed;
     }
 
     //Function to save contact
