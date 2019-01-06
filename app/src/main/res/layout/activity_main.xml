@@ -5,11 +5,11 @@
     style="@style/AppTheme"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?attr/back"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     tools:context=".MainActivity"
-    android:fillViewport="true">
+    android:fillViewport="true"
+    android:background="?attr/background">
 
     <android.support.constraint.ConstraintLayout
         android:id="@+id/constraintLayout"
