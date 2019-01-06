@@ -3,9 +3,28 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">#008577</item>
+        <item name="colorPrimaryDark">#00574B</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="backgroundcolor">#FFF</item>
+        <item name="textcolor">#000</item>
+        <item name="buttoncolor">#00574B</item>
+        <item name="background">@drawable/images</item>
+        <item name="ischecked">false</item>
+
+
     </style>
+
+    <style name="DarkTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#000000</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="backgroundcolor">#303030</item>
+        <item name="textcolor">#FFF</item>
+        <item name="buttoncolor">#00574B</item>
+        <item name="background">@drawable/dark_theme_image</item>
+        <item name="ischecked">true</item>
+    </style>
+
 
 </resources>

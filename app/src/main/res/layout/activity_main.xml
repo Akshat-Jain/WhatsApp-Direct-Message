@@ -1,36 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    style="@style/AppTheme"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context=".MainActivity"
+    android:fillViewport="true"
+    android:background="?attr/background">
 
-    <TextView
-        android:id="@+id/labelText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Enter the phone number you want to message on WhatsApp (along with country code)"
-        tools:layout_editor_absoluteX="76dp"
-        tools:layout_editor_absoluteY="77dp" />
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/inputField"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="phone"
-        tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="122dp"
-        android:layout_below="@+id/labelText"/>
+        <TextView
+            android:id="@+id/labelText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/phone_number_input"
+            android:textAlignment="center"
+            android:textColor="?attr/textcolor"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/inputField"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Message on WhatsApp"
-        tools:layout_editor_absoluteX="87dp"
-        tools:layout_editor_absoluteY="231dp"
-        android:onClick="contactOnWhatsApp"
-        android:layout_below="@+id/inputField"/>
-</RelativeLayout>
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/cpp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@null"
+            app:ccp_contentColor="?attr/textcolor"
+            app:ccp_defaultNameCode="IN"
+            app:layout_constraintBottom_toTopOf="@+id/horizontal_guideline"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="@+id/vertical_guideline"></com.hbb20.CountryCodePicker>
+
+        <EditText
+            android:id="@+id/inputField"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="@string/phone_number_hint"
+            android:inputType="phone"
+            android:textColor="?attr/textcolor"
+            android:textColorHint="?attr/textcolor"
+            app:layout_constraintBottom_toTopOf="@+id/horizontal_guideline"
+            app:layout_constraintLeft_toLeftOf="@+id/vertical_guideline"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom"
+            android:elevation="4dp"
+            android:onClick="contactOnWhatsApp"
+            android:padding="4dp"
+            android:text="@string/button_text"
+            android:textColor="@color/white"
+            app:layout_constraintHorizontal_bias="0.076"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/horizontal_guideline" />
+
+        <Button
+            android:id="@+id/buttonsave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom"
+            android:elevation="4dp"
+            android:onClick="SaveContact"
+            android:padding="4dp"
+            android:text="@string/buttonsave_text"
+            android:textColor="@color/white"
+            app:layout_constraintHorizontal_bias="0.974"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/horizontal_guideline" />
+
+
+        <android.support.constraint.Guideline
+            android:id="@+id/vertical_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.4" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/horizontal_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <Button
+            android:id="@+id/button_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/custom"
+            android:onClick="clearNumber"
+            android:text="@string/clear"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
