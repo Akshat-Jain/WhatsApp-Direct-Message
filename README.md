@@ -20,8 +20,8 @@ $ git clone https://github.com/Akshat-Jain/WhatsApp-Direct-Message.git
 ```
 Then open in Android Studio.
 #### Screenshots
-![ss1](https://user-images.githubusercontent.com/43731599/50734827-087db480-11cb-11e9-804f-114640843bbc.png)
-![ss2](https://user-images.githubusercontent.com/43731599/50734836-221efc00-11cb-11e9-9e66-ce9668694877.png)
-![ss3](https://user-images.githubusercontent.com/43731599/50734840-39f68000-11cb-11e9-9cfa-b330e79a8ad8.png)
-![ss4](https://user-images.githubusercontent.com/43731599/50734845-51ce0400-11cb-11e9-9a81-54d9d2211012.png)
-![ss5](https://user-images.githubusercontent.com/43731599/50734852-61e5e380-11cb-11e9-8bf2-d0c90e50510b.png)
+![ss1](https://user-images.githubusercontent.com/43731599/50737109-9e293c00-11eb-11e9-82af-04e1c69d3dcf.png)
+![ss2](https://user-images.githubusercontent.com/43731599/50737135-d3ce2500-11eb-11e9-923e-85de30d23b7d.png)
+![ss3](https://user-images.githubusercontent.com/43731599/50737166-10018580-11ec-11e9-9736-6f837743edb9.png)
+![ss4](https://user-images.githubusercontent.com/43731599/50737183-3f17f700-11ec-11e9-911b-e217d3db00a9.png)
+![ss5](https://user-images.githubusercontent.com/43731599/50737208-88684680-11ec-11e9-95a3-6b189ede5691.png)
