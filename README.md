@@ -3,15 +3,15 @@
 [![forthebadge](https://forthebadge.com/images/badges/built-for-android.svg)](http://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/made-with-java.svg)](http://forthebadge.com)
 
-A simple app which saves you the effort of saving numbers as contacts if you wish to contact them on WhatsApp.
+A simple app which saves your time from saving numbers as contacts if you wish to send messages to them on WhatsApp.
 
 ## Features
-* No need to save the phone number in order to send WhatsApp message.
-* Send message to yourself.
+* No need to save the phone number on your phone in order to send WhatsApp messages.
+* Send messages to yourself as well.
 
 ### Download the app
 
-You can download by clicking [here](https://github.com/NJACKWinterOfCode/WhatsApp-Direct-Message/raw/master/apk/WhatsApp_Direct_Message.apk) :-)
+You can download the app by clicking [here](https://github.com/NJACKWinterOfCode/WhatsApp-Direct-Message/raw/master/apk/WhatsApp_Direct_Message.apk) :-)
 
 ### Install and contribute
 
